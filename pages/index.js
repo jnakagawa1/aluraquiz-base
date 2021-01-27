@@ -1,37 +1,25 @@
-import styled from 'styled-components'
-import Head from 'next/head'
+import React from "react";
+import Head from "next/head";
+import { useRouter } from "next/router";
 
 import db from "../db.json";
 import Widget from "../src/components/Widget";
 import QuizLogo from "../src/components/QuizLogo";
 import QuizBackground from "../src/components/QuizBackground";
+import QuizContainer from "../src/components/QuizContainer";
 import Footer from "../src/components/Footer";
 import GitHubCorner from "../src/components/GitHubCorner";
-
-export const QuizContainer = styled.div`
-  width: 100%;
-  max-width: 350px;
-  padding-top: 45px;
-  margin: auto 10%;
-  @media screen and (max-width: 500px) {
-    margin: auto;
-    padding: 15px;
-  }
-`;
-
-// const BackgroundImage = styled.div`
-//     background-image: url(${db.bg});
-//     flex: 1;
-//     background-size: cover;
-//     background-position: center;
-// `;
+import Input from "../src/components/Input";
+import Button from "../src/components/Button";
 
 export default function Home() {
+  const router = useRouter();
+  const [name, setName] = React.useState("");
+
   return (
     <QuizBackground backgroundImage={db.bg}>
       <Head>
         <title>{db.title}</title>
-        <meta property="og:image" content={`${db.bg}`} key="ogimage" />
       </Head>
       <QuizContainer>
         <QuizLogo />
@@ -41,13 +29,32 @@ export default function Home() {
           </Widget.Header>
           <Widget.Content>
             <p>{db.description}</p>
+            <form
+              onSubmit={function (infosDoEvento) {
+                infosDoEvento.preventDefault();
+                router.push(`/quiz?name=${name}`);
+              }}
+            >
+              <Input
+                name="nomeDoUsuario"
+                onChange={(props) => setName(props.target.value)}
+                placeholder="Digite seu nome"
+                value={name}
+              />
+              <Button type="submit" disabled={name.length === 0}>
+                {`Jogar ${name}`}
+              </Button>
+            </form>
           </Widget.Content>
         </Widget>
 
         <Widget>
           <Widget.Content>
             <h1>Quizes da Galera</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam enim enim, consectetur at velit volutpat, tempor dignissim augue. </p>            
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              enim enim, consectetur at velit volutpat, tempor dignissim augue.{" "}
+            </p>
           </Widget.Content>
         </Widget>
         <Footer />
