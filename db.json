@@ -7,7 +7,7 @@
         "image": "https://img.quizur.com/f/img5c05b1c2e81cb8.90395306.jpeg?lastEdited=1543877068",
         "title": "Qual foi o primeiro filme a ser lançado?",
         "description": "Essa é pra aquecer",
-        "answer": 2,
+        "answer": 1,
         "alternatives": [
           "Capitão América 2: O Soldado Invernal",
           "Capitão América: O Primeiro Vingador",
@@ -18,56 +18,20 @@
       {
         "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
         "title": "Quais foram os personagens, que tiveram seus atores trocados durante os filmes?",
-        "description": "Faz tempo em haha",
-        "answer": 3,
+        "description": "",
+        "answer": 2,
         "alternatives": [
            "Steve Rogers, Pantera Negra e Visão.",
            "Hulk, Homem Aranha e Homem Formiga.",
            "Hulk e Máquina de Combate.",
            "Gavião Arqueiro, Viúva Negra e Visão."
         ]
-      },
-      {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Quais heróis já conseguiram levantar o martelo de Thor?",
-        "description": "Faz tempo em haha",
-        "answer": 5,
-        "alternatives": [
-           "Steve Rogers, Pantera Negra e Hulk.",
-           "Tony Stark e Peter Quill.",
-           "Hulk e Feiticeira Escarlate.",
-           "Visão e Bucky.",
-           "Steve Rogers e Visão."
-        ]
-      },
-      {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Quem ficou no time Stark, em Capitão América: Guerra Civil?",
-        "description": "Faz tempo em haha",
-        "answer": 1,
-        "alternatives": [
-           "Homem de Ferro, Máquina de Combate, Homem Aranha, Visão, Viúva Negra e Pantera Negra.",
-           "Dr. Estranho, Bucky, Rocket, Falcão, Hulk, Viúva Negra e Gavião Arqueiro.",
-           "Gamora, Wanda, Pantera Negra, e Wolverine.",
-           "Capitão América, Hulk, Peter Quill, Homem Aranha e Visão."
-        ]
-      },
-      {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Qual foi a 3ª joia que o Thanos conquistou?",
-        "description": "Faz tempo em haha",
-        "answer": 2,
-        "alternatives": [
-           "Alma",
-           "Realidade",
-           "Tempo",
-           "Poder",
-           "Espaço"
-        ]
       }
     ],
     "external": [
-      ""
+      "https://aluraquiz-base.alura-challenges.vercel.app/",
+      "https://aluraquiz-css.omariosouto.vercel.app/",
+      "https://aluraquiz-devsoutinho.omariosouto.vercel.app/"
     ],
     "theme": {
       "colors": {
